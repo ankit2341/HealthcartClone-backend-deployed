@@ -15,7 +15,8 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  res.sendFile(__dirname + "/utils/index.html");
+  res.send("welcome to backend")
+  // res.sendFile(__dirname + "/utils/index.html");
 });
 
 const sendMail = ({ link }) => {
